@@ -33,7 +33,7 @@ namespace Spy_Adventure_game
             }
             else if (page == 2)
             {
-                int randValue = randGen.Next(1, 100);
+                int randValue = randGen.Next(1, 100);//
 
                 if (randValue < 80)
                 {
