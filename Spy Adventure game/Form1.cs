@@ -18,6 +18,7 @@ namespace Spy_Adventure_game
     {
         // Track the page I am on
         int page = 1;
+        // Gives me a %20 chance of avoiding arrest on page 4
         Random randGen = new Random();
 
         public SpyGame()
@@ -27,13 +28,15 @@ namespace Spy_Adventure_game
 
         private void optionButton1_Click(object sender, EventArgs e)
         {
+            // Go to diffrent page when button 1 is pressed
             if (page == 1)
             {
                 page = 2;
             }
             else if (page == 2)
             {
-                int randValue = randGen.Next(1, 100);//
+                //Determens if I avoid arrest 
+                int randValue = randGen.Next(1, 100);
 
                 if (randValue < 80)
                 {
@@ -153,6 +156,7 @@ namespace Spy_Adventure_game
 
         private void optionButton2_Click(object sender, EventArgs e)
         {
+            //Go to new page when Button 2 is pressed.
 
             if (page == 1)
             {
@@ -255,6 +259,7 @@ namespace Spy_Adventure_game
             DisplayPage();
         }
         private void DisplayPage()
+            //Add dialouge to my options
         {
             switch (page)
             {
@@ -554,7 +559,7 @@ namespace Spy_Adventure_game
         }
 
         private void optionButton3_Click(object sender, EventArgs e)
-        {
+        {// for my third button option on page 11
            if (page == 11)
             {
                 page = 14;
