@@ -259,7 +259,7 @@ namespace Spy_Adventure_game
             DisplayPage();
         }
         private void DisplayPage()
-            //Add dialouge to my options
+            //Add dialouge to my options//
         {
             switch (page)
             {
